@@ -1,0 +1,52 @@
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+#              Yet-Another-Bench-Script              #
+#                     v2021-10-09                    #
+# https://github.com/masonr/yet-another-bench-script #
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+
+Sun 28 Nov 2021 03:20:32 PM EST
+
+Basic System Information:
+---------------------------------
+Processor  : Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz
+CPU cores  : 4 @ 2594.655 MHz
+AES-NI     : ✔ Enabled
+VM-x/AMD-V : ✔ Enabled
+RAM        : 7.7 GiB
+Swap       : 975.0 MiB
+Disk       : 456.4 GiB
+
+fio Disk Speed Tests (Mixed R/W 50/50):
+---------------------------------
+Block Size | 4k            (IOPS) | 64k           (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 520.00 KB/s    (130) | 7.45 MB/s      (116)
+Write      | 547.00 KB/s    (136) | 7.85 MB/s      (122)
+Total      | 1.06 MB/s      (266) | 15.31 MB/s     (238)
+           |                      |
+Block Size | 512k          (IOPS) | 1m            (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 29.25 MB/s      (57) | 35.75 MB/s      (34)
+Write      | 31.30 MB/s      (61) | 39.00 MB/s      (38)
+Total      | 60.56 MB/s     (118) | 74.75 MB/s      (72)
+
+iperf3 Network Speed Tests (IPv4):
+---------------------------------
+Provider        | Location (Link)           | Send Speed      | Recv Speed
+                |                           |                 |
+Clouvider       | London, UK (10G)          | 11.4 Mbits/sec  | 107 Mbits/sec
+Online.net      | Paris, FR (10G)           | busy            | 80.2 Mbits/sec
+WorldStream     | The Netherlands (10G)     | busy            | 95.1 Mbits/sec
+WebHorizon      | Singapore (1G)            | busy            | busy
+Clouvider       | NYC, NY, US (10G)         | 11.2 Mbits/sec  | 112 Mbits/sec
+Velocity Online | Tallahassee, FL, US (10G) | 11.2 Mbits/sec  | 93.9 Mbits/sec
+Clouvider       | Los Angeles, CA, US (10G) | 11.5 Mbits/sec  | 107 Mbits/sec
+Iveloz Telecom  | Sao Paulo, BR (2G)        | busy            | busy
+
+Geekbench 5 Benchmark Test:
+---------------------------------
+Test            | Value
+                |
+Single Core     | 1010
+Multi Core      | 3314
+Full Test       | https://browser.geekbench.com/v5/cpu/11301196
