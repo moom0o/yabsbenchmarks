@@ -1,0 +1,52 @@
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+#              Yet-Another-Bench-Script              #
+#                     v2021-12-03                    #
+# https://github.com/masonr/yet-another-bench-script #
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+
+Fri Dec 24 03:24:36 UTC 2021
+
+Basic System Information:
+---------------------------------
+Processor  : Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz
+CPU cores  : 1 @ 2400.062 MHz
+AES-NI     : ✔ Enabled
+VM-x/AMD-V : ❌ Disabled
+RAM        : 987.5 MiB
+Swap       : 0.0 KiB
+Disk       : 7.8 GiB
+
+fio Disk Speed Tests (Mixed R/W 50/50):
+---------------------------------
+Block Size | 4k            (IOPS) | 64k           (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 6.32 MB/s     (1.5k) | 64.15 MB/s    (1.0k)
+Write      | 6.32 MB/s     (1.5k) | 64.57 MB/s    (1.0k)
+Total      | 12.64 MB/s    (3.1k) | 128.72 MB/s   (2.0k)
+           |                      |
+Block Size | 512k          (IOPS) | 1m            (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 60.11 MB/s     (117) | 58.53 MB/s      (57)
+Write      | 63.02 MB/s     (123) | 63.08 MB/s      (61)
+Total      | 123.13 MB/s    (240) | 121.61 MB/s    (118)
+
+iperf3 Network Speed Tests (IPv4):
+---------------------------------
+Provider        | Location (Link)           | Send Speed      | Recv Speed
+                |                           |                 |
+Clouvider       | London, UK (10G)          | 312 Mbits/sec   | 163 Mbits/sec
+Online.net      | Paris, FR (10G)           | 382 Mbits/sec   | 166 Mbits/sec
+WorldStream     | The Netherlands (10G)     | 365 Mbits/sec   | 181 Mbits/sec
+WebHorizon      | Singapore (1G)            | 223 Mbits/sec   | 184 Mbits/sec
+Clouvider       | NYC, NY, US (10G)         | 676 Mbits/sec   | 409 Mbits/sec
+Velocity Online | Tallahassee, FL, US (10G) | 671 Mbits/sec   | 485 Mbits/sec
+Clouvider       | Los Angeles, CA, US (10G) | 511 Mbits/sec   | 121 Mbits/sec
+Iveloz Telecom  | Sao Paulo, BR (2G)        | 272 Mbits/sec   | 138 Mbits/sec
+
+Geekbench 5 Benchmark Test:
+---------------------------------
+Test            | Value
+                |
+Single Core     | 710
+Multi Core      | 710
+Full Test       | https://browser.geekbench.com/v5/cpu/11779120
