@@ -1,0 +1,65 @@
+
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+#              Yet-Another-Bench-Script              #
+#                     v2021-12-28                    #
+# https://github.com/masonr/yet-another-bench-script #
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+
+Thu 03 Feb 2022 04:26:39 AM UTC
+
+Basic System Information:
+---------------------------------
+Processor  : Intel Xeon Processor (Skylake, IBRS)
+CPU cores  : 1 @ 2294.608 MHz
+AES-NI     : ✔ Enabled
+VM-x/AMD-V : ❌ Disabled
+RAM        : 1.9 GiB
+Swap       : 0.0 KiB
+Disk       : 18.7 GiB
+
+fio Disk Speed Tests (Mixed R/W 50/50):
+---------------------------------
+Block Size | 4k            (IOPS) | 64k           (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 123.70 MB/s  (30.9k) | 1.36 GB/s    (21.4k)
+Write      | 124.03 MB/s  (31.0k) | 1.37 GB/s    (21.5k)
+Total      | 247.74 MB/s  (61.9k) | 2.74 GB/s    (42.9k)
+           |                      |
+Block Size | 512k          (IOPS) | 1m            (IOPS)
+  ------   | ---            ----  | ----           ----
+Read       | 2.26 GB/s     (4.4k) | 2.39 GB/s     (2.3k)
+Write      | 2.39 GB/s     (4.6k) | 2.55 GB/s     (2.4k)
+Total      | 4.66 GB/s     (9.1k) | 4.95 GB/s     (4.8k)
+
+iperf3 Network Speed Tests (IPv4):
+---------------------------------
+Provider        | Location (Link)           | Send Speed      | Recv Speed
+                |                           |                 |
+Clouvider       | London, UK (10G)          | 3.29 Gbits/sec  | 7.68 Gbits/sec
+Online.net      | Paris, FR (10G)           | 8.56 Gbits/sec  | 6.24 Gbits/sec
+WorldStream     | The Netherlands (10G)     | 9.87 Gbits/sec  | 5.28 Gbits/sec
+WebHorizon      | Singapore (400M)          | 291 Mbits/sec   | 505 Mbits/sec
+Clouvider       | NYC, NY, US (10G)         | 1.98 Gbits/sec  | 2.08 Gbits/sec
+Velocity Online | Tallahassee, FL, US (10G) | 206 Mbits/sec   | 1.65 Gbits/sec
+Clouvider       | Los Angeles, CA, US (10G) | 1.17 Gbits/sec  | 1.09 Gbits/sec
+Iveloz Telecom  | Sao Paulo, BR (2G)        | 300 Mbits/sec   | 539 Mbits/sec
+
+iperf3 Network Speed Tests (IPv6):
+---------------------------------
+Provider        | Location (Link)           | Send Speed      | Recv Speed
+                |                           |                 |
+Clouvider       | London, UK (10G)          | 5.98 Gbits/sec  | 5.54 Gbits/sec
+Online.net      | Paris, FR (10G)           | 7.67 Gbits/sec  | 6.09 Gbits/sec
+WorldStream     | The Netherlands (10G)     | 10.1 Gbits/sec  | 5.87 Gbits/sec
+WebHorizon      | Singapore (400M)          | 217 Mbits/sec   | 470 Mbits/sec
+Clouvider       | NYC, NY, US (10G)         | 1.79 Gbits/sec  | 2.15 Gbits/sec
+Clouvider       | Los Angeles, CA, US (10G) | 1.06 Gbits/sec  | 1.11 Gbits/sec
+
+Geekbench 5 Benchmark Test:
+---------------------------------
+Test            | Value
+                |
+Single Core     | 738
+Multi Core      | 711
+Full Test       | https://browser.geekbench.com/v5/cpu/12556573
+
